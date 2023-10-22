@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231015 21:06:04.260" rpa="false" schemaversion="4">
+<suite id="s1" name="Jimms robot" source="D:\Jimms_robot">
+<suite id="s1-s1" name="Test Cases" source="D:\Jimms_robot\test_cases">
+<suite id="s1-s1-s1" name="TestCase 06" source="D:\Jimms_robot\test_cases\TestCase_06.robot">
+<test id="s1-s1-s1-t1" name="CreateNewAccount" line="23">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231015 21:06:04.749" level="INFO">Opening browser 'chrome' to base url 'https://www.jimms.fi/'.</msg>
+<status status="PASS" starttime="20231015 21:06:04.748" endtime="20231015 21:06:17.212"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 21:06:20.216" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231015 21:06:17.214" endtime="20231015 21:06:20.216"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231015 21:06:20.222" level="INFO">Clicking element 'xpath://a[@alt='Login']'.</msg>
+<status status="PASS" starttime="20231015 21:06:20.218" endtime="20231015 21:06:24.366"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 21:06:31.368" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20231015 21:06:24.367" endtime="20231015 21:06:31.368"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${no_radio_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231015 21:06:31.370" level="INFO">Clicking element 'xpath://input[@id='private-tab-input']'.</msg>
+<msg timestamp="20231015 21:06:31.673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231015 21:06:31.673" level="FAIL">Element with locator 'xpath://input[@id='private-tab-input']' not found.</msg>
+<status status="FAIL" starttime="20231015 21:06:31.369" endtime="20231015 21:06:31.681"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.684" endtime="20231015 21:06:31.684"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_text_field}</arg>
+<arg>rasel.qups@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.685" endtime="20231015 21:06:31.685"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.686" endtime="20231015 21:06:31.686"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_text_field}</arg>
+<arg>password12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.686" endtime="20231015 21:06:31.687"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.688" endtime="20231015 21:06:31.688"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${confirm_password_text_field}</arg>
+<arg>password12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.688" endtime="20231015 21:06:31.689"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.689" endtime="20231015 21:06:31.689"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name_text_field}</arg>
+<arg>rasel</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.690" endtime="20231015 21:06:31.690"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.690" endtime="20231015 21:06:31.690"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name_text_field}</arg>
+<arg>uddin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.691" endtime="20231015 21:06:31.691"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.691" endtime="20231015 21:06:31.691"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${address_text_field}</arg>
+<arg>finland</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.692" endtime="20231015 21:06:31.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.692" endtime="20231015 21:06:31.692"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${postal_code_text_field}</arg>
+<arg>finland1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.693" endtime="20231015 21:06:31.693"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.693" endtime="20231015 21:06:31.693"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${city_text_field}</arg>
+<arg>finland</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.694" endtime="20231015 21:06:31.694"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.694" endtime="20231015 21:06:31.694"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${phone_text_field}</arg>
+<arg>+6235276897</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.695" endtime="20231015 21:06:31.695"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.696" endtime="20231015 21:06:31.696"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${privacy_checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.697" endtime="20231015 21:06:31.697"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.699" endtime="20231015 21:06:31.699"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${create_account_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.699" endtime="20231015 21:06:31.699"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.700" endtime="20231015 21:06:31.700"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231015 21:06:31.703" endtime="20231015 21:06:31.703"/>
+</kw>
+<status status="FAIL" starttime="20231015 21:06:04.747" endtime="20231015 21:06:31.704">Element with locator 'xpath://input[@id='private-tab-input']' not found.</status>
+</test>
+<status status="FAIL" starttime="20231015 21:06:04.307" endtime="20231015 21:06:31.707"/>
+</suite>
+<status status="FAIL" starttime="20231015 21:06:04.305" endtime="20231015 21:06:31.711"/>
+</suite>
+<status status="FAIL" starttime="20231015 21:06:04.263" endtime="20231015 21:06:31.714"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Jimms robot">Jimms robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Cases">Jimms robot.Test Cases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TestCase 06">Jimms robot.Test Cases.TestCase 06</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
